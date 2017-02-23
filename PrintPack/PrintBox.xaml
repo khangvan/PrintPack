@@ -1,0 +1,15 @@
+﻿<Window x:Class="PrintPack.PrintBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PrintBox" Height="227" Width="439" Loaded="Window_Loaded">
+    <Grid AllowDrop="True" Height="182" Width="415">
+        <Label Content="Number of Box Labels to Print:" Height="28" HorizontalAlignment="Left" Margin="0,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Starting Serial #:" Height="28" HorizontalAlignment="Left" Margin="38,81,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Last Serial #:" Height="28" HorizontalAlignment="Left" Margin="56,115,0,0" Name="label3" VerticalAlignment="Top" />
+        <Button Content="Print" Height="23" HorizontalAlignment="Left" Margin="319,81,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="319,143,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="137,81,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="137,115,0,0" Name="comboBox2" VerticalAlignment="Top" Width="120" />
+        <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,12,129,0" Name="comboBox3" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</Window>

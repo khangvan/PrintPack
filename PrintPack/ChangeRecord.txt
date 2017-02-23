@@ -1,0 +1,3 @@
+﻿18 Apr- 
+	Check Dzer consum config mới cho chạy
+	In nhãn Dozer multi label cho Triều

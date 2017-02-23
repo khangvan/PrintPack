@@ -1,0 +1,56 @@
+﻿<Window x:Class="PrintPack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ACS EE Print Pack Station" Height="261" Width="660" AllowsTransparency="False" Opacity="1" OpacityMask="#FF00B9B6" Loaded="Window_Loaded" Closing="Window_Closing" Background="{x:Null}">
+    <Grid Opacity="1" Background="#FFD1DAD1" Margin="0,0,0,-2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140*" />
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="109*" />
+            <ColumnDefinition Width="187*" />
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Production Order:" Height="36" HorizontalAlignment="Left" Margin="7,12,0,0" Name="label1" VerticalAlignment="Top" FontSize="20" Foreground="#FF0000EA" Grid.ColumnSpan="3" Grid.Column="2" />
+        <TextBox Height="43" HorizontalAlignment="Right" Margin="0,44,82,0" Name="txtProdOrder" VerticalAlignment="Top" Width="195" KeyDown="textBox1_KeyDown" Text="" FontSize="25" Foreground="#FF0000EA" TextChanged="txtProdOrder_TextChanged" Grid.ColumnSpan="4" Grid.Column="2" />
+        <CheckBox Content="Print Customer Label" Height="16" HorizontalAlignment="Left" Margin="37,138,0,0" Name="checkBox_PrintCusLabel" VerticalAlignment="Top" Click="checkBox1_Click" Checked="checkBox1_Checked" Unchecked="checkBox1_Unchecked" IsTabStop="False" ToolTip="In nhãn Shipping" Grid.ColumnSpan="2" />
+        <CheckBox Content="Print Individual Box Labels" Height="19" HorizontalAlignment="Left" Margin="37,164,0,0" Name="checkBox_PrintIndividualBoxLabels" VerticalAlignment="Top" IsChecked="True" IsTabStop="False" ToolTip="In danh sách sô SN trong thùng" Grid.ColumnSpan="3" />
+        <CheckBox Content="Print OverPack Label" Height="16" HorizontalAlignment="Left" Margin="37,192,0,0" Name="checkBox_PrintOverPackLabel" VerticalAlignment="Top" Checked="checkBox3_Checked" Unchecked="checkBox3_Unchecked" IsTabStop="False" ToolTip="In nhãn thãng tin ãóng gói" Grid.ColumnSpan="2" />
+        <Button Content="Proceed" Height="30" HorizontalAlignment="Left" Margin="39,29,0,0" Name="button1" VerticalAlignment="Top" Width="120" Click="button1_Click" Opacity="1" Grid.Column="6" IsTabStop="False"></Button>
+        <Button Content="Exit" Height="32" HorizontalAlignment="Left" Margin="39,66,0,0" Name="button2" VerticalAlignment="Top" Width="119" Click="button2_Click" Grid.Column="6" IsTabStop="False" />
+        <Label Content="Number of Labels to Print:" Height="28" HorizontalAlignment="Left" Margin="45,120,0,0" Name="label2" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.Column="2" />
+        <Label Content="Number of Serial #'s per overpack:" Height="28" HorizontalAlignment="Left" Margin="35,146,0,0" Name="label3" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.Column="2" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="46,151,0,0" Name="comboBox1" VerticalAlignment="Top" Width="80" Grid.Column="5" IsTabStop="False" Grid.ColumnSpan="2" />
+        <ComboBox Height="23" Margin="46,125,170,0" Name="comboBox2" VerticalAlignment="Top" IsTabStop="False" Grid.Column="5" Grid.ColumnSpan="2" />
+        <Label Content="Label" Height="26" HorizontalAlignment="Left" Margin="20,44,0,0" Name="label1SK" VerticalAlignment="Top" Width="127" Visibility="Hidden" Grid.ColumnSpan="2" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="32,115,0,0" Name="labelSKCustomer" VerticalAlignment="Top" Width="152" Visibility="Hidden" Grid.ColumnSpan="3" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="17,115,0,0" Name="labelSKNumber" VerticalAlignment="Top" Width="139" Visibility="Hidden" Grid.ColumnSpan="3" Grid.Column="2" />
+        <Label Content="Label" Height="23" HorizontalAlignment="Left" Margin="126,164,0,0" Name="labelSKIndividual" VerticalAlignment="Top" Width="219" Visibility="Hidden" Grid.ColumnSpan="5" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="32,208,0,0" Name="labelSKPrintOverpack" VerticalAlignment="Top" Width="161" Visibility="Hidden" Grid.ColumnSpan="3" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Right" Margin="0,208,157,0" Name="labelSKNumberPerOverPack" VerticalAlignment="Top" Grid.ColumnSpan="4" Width="218" Visibility="Hidden" Grid.Column="3" />
+        <Button Content="PackingSupport" Height="30" HorizontalAlignment="Left" Margin="38,103,0,0" Name="button3" Opacity="1" VerticalAlignment="Top" Width="120" Grid.Column="6" Click="button3_Click" IsTabStop="False" />
+        <Label Content="Revision" Height="36" HorizontalAlignment="Left" Margin="30,12,0,0" Name="lblRevision" VerticalAlignment="Top" FontSize="20" Foreground="#FF0000EA" Grid.ColumnSpan="2" Grid.Column="5" />
+        <TextBox Height="43" HorizontalAlignment="Left" Margin="42,44,0,0" Name="txtREVision" VerticalAlignment="Top" Width="57" MaxLength="3" KeyDown="textBox2_KeyDown" FontSize="25" Foreground="#FF0000EA" Grid.Column="5" />
+        <Button Content="RePrint" Height="30" HorizontalAlignment="Left" IsTabStop="False" Margin="39,139,0,0" Name="button4" VerticalAlignment="Top" Width="119" Grid.Column="6" Click="button4_Click" Visibility="Visible" />
+        <Button Content="WAREHOUSE MODE" Height="30" HorizontalAlignment="Left" IsTabStop="False" Margin="39,179,0,0" Name="button" VerticalAlignment="Top" Width="119" Grid.Column="6" Visibility="Visible" Click="button_Click" />
+
+        <ComboBox Grid.ColumnSpan="6" Height="23" HorizontalAlignment="Left" Margin="37,241,0,0" Name="cboPrinterList" VerticalAlignment="Top" Width="418" />
+        <Button Content="Print Test Connection" Grid.Column="6" Height="27" HorizontalAlignment="Left" Margin="22,241,0,0" Name="button5" VerticalAlignment="Top" Width="120" />
+        <GroupBox Header="Input Mode" Height="101" HorizontalAlignment="Left" Margin="37,14,0,0" Name="groupBox1" VerticalAlignment="Top" Width="128" Grid.ColumnSpan="2">
+            <Grid Height="85">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="115*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="SN only" HorizontalAlignment="Left" Margin="17,6,0,63" Name="radioButton_SNonly" ToolTip="Cho Base scanner, FFC với SN" />
+                <RadioButton Content="Model-SN" Height="16" HorizontalAlignment="Left" Margin="17,25,0,0" Name="radioButton_ModelSN" VerticalAlignment="Top" IsChecked="True" ToolTip="Mode dành cho FFC" />
+                <RadioButton Content="Model(Enter)SN" Height="16" HorizontalAlignment="Left" Margin="17,0,0,27" Name="radioButton_ModelEnterSN" VerticalAlignment="Bottom" ToolTip="Halogen Mode" />
+                <RadioButton Content="Model-SN 2D" Height="16" HorizontalAlignment="Left" Margin="17,0,0,8" Name="radioButton_ModelSN2D" VerticalAlignment="Bottom" />
+            </Grid>
+        </GroupBox>
+        <ComboBox x:Name="cboCOO" Grid.ColumnSpan="2" Grid.Column="5" HorizontalAlignment="Left" Margin="6,192,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboCOO_SelectionChanged"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="PrintPack.PrintPackSerials"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PrintPackSerials" Height="556" Width="514" Loaded="Window_Loaded" BorderThickness="0" BorderBrush="Black" Closed="Window_Closed" ResizeMode="NoResize">
+    <Grid Margin="0,0,4,0">
+        <Grid Name="grid1" Width="411" Margin="16,12,16,0" Height="308" VerticalAlignment="Top">
+            <Button Content="Back" Height="23" HorizontalAlignment="Left" Margin="326,6,0,0" Name="button1" VerticalAlignment="Top" Width="75" TabIndex="2" Click="button1_Click" />
+            <Button Content="Print" Height="23" HorizontalAlignment="Left" Margin="140,0,0,279" Name="button2" VerticalAlignment="Bottom" Width="128" TabIndex="1" Click="button2_Click" />
+            <Border BorderThickness="5" BorderBrush="Black" Margin="0,45,0,-172">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" BorderThickness="5" BorderBrush="Black" ScrollChanged="ScrollViewer_ScrollChanged" CanContentScroll="True" Margin="0,5,0,0" Height="385">
+
+                    <StackPanel Height="232" HorizontalAlignment="Left" Margin="17,5,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="379" UseLayoutRounding="False" />
+
+                </ScrollViewer>
+            </Border>
+            <Label Content="Enter Model-Serial" Height="28" HorizontalAlignment="Left" Margin="10,26,0,0" Name="label1" VerticalAlignment="Top" Width="203" />
+            <Label Content="Box: YYMDXXX" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label2" VerticalAlignment="Top" Width="90" />
+            <Label Content="Packed: XXXX" Height="28" HorizontalAlignment="Left" Margin="218,26,-41,0" Name="label3" VerticalAlignment="Top" Width="234" />
+        </Grid>
+    </Grid>
+</Window>

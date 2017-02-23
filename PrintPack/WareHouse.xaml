@@ -1,0 +1,31 @@
+﻿<Window x:Class="PrintPack.WareHouse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WareHouse Packing Station" Height="344" Width="715" Closing="Window_Closing" ResizeMode="CanResize">
+    <Grid Opacity="1" Background="#FFD1DAD1">
+        <Button Content="UnPacking All" Height="40" HorizontalAlignment="Left" Margin="35,192,0,0" Name="button1" VerticalAlignment="Top" Width="135" Click="button1_Click" />
+        <Button Content="Combine Packing" Height="40" HorizontalAlignment="Left" Margin="35,138,0,0" Name="button2" VerticalAlignment="Top" Width="135" Click="button2_Click" />
+        <Button Content="Scan Box Number" Height="40" HorizontalAlignment="Left" Margin="324,25,0,0" Name="button3" VerticalAlignment="Top" Width="135" Click="button3_Click" />
+        <Button Content="UnPacking Apart" Height="40" HorizontalAlignment="Left" Margin="35,80,0,0" Name="button4" VerticalAlignment="Top" Width="135" Click="button4_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="202,123,0,0" Name="textBox1" VerticalAlignment="Top" Width="102" MaxLength="7" KeyDown="textBox1_KeyDown" TextChanged="textBox1_TextChanged" />
+        <Label Content="Box Number" Height="28" HorizontalAlignment="Left" Margin="219,100,0,0" Name="label1" VerticalAlignment="Top" />
+        <Button Content="Create New Box" Height="40" HorizontalAlignment="Left" Margin="35,25,0,0" Name="button5" VerticalAlignment="Top" Width="135" Click="button5_Click" />
+        <Button Content="Box RePrint" Height="40" HorizontalAlignment="Left" Margin="324,138,0,0" Name="button6" VerticalAlignment="Top" Width="135" Click="button6_Click" />
+        <Button Content="RePrint" Height="40" HorizontalAlignment="Left" Margin="324,192,0,0" Name="button7" VerticalAlignment="Top" Width="135" Click="button7_Click" />
+        <Button Content="UnPacking + New Box" Height="40" HorizontalAlignment="Left" Margin="324,80,0,0" Name="button8" VerticalAlignment="Top" Width="135" Click="button8_Click" />
+        <Button Content="UnPacking Parts" Height="40" HorizontalAlignment="Left" Margin="491,25,0,0" Name="button9" VerticalAlignment="Top" Width="135" Click="button9_Click" />
+        <Button Content="Box Manual" Height="40" HorizontalAlignment="Left" Margin="491,80,0,0" Name="button10" VerticalAlignment="Top" Width="135" Click="button10_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="578,0,0,135" MaxLength="30" Name="textBox2" VerticalAlignment="Bottom" Width="102" KeyDown="textBox2_KeyDown" />
+        <Label Content="Model Number" Height="28" HorizontalAlignment="Left" Margin="491,146,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="578,0,0,100" MaxLength="10" Name="textBox3" VerticalAlignment="Bottom" Width="102" KeyDown="textBox3_KeyDown" />
+        <Label Content="Quantity" Height="28" HorizontalAlignment="Left" Margin="504,180,0,0" Name="label3" VerticalAlignment="Top" />
+        <Button Content="Print" Height="40" HorizontalAlignment="Left" Margin="508,253,0,0" Name="button11" VerticalAlignment="Top" Width="64" Click="button11_Click" />
+        <Button Content="Close" Height="40" HorizontalAlignment="Right" Margin="0,252,20,0" Name="button12" VerticalAlignment="Top" Width="64" Click="button12_Click" />
+        <CheckBox Content="Made in VietNam" Height="19" HorizontalAlignment="Left" Margin="508,126,0,0" Name="checkBox1" VerticalAlignment="Top" Width="110" IsChecked="True" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="578,0,0,65" MaxLength="3" Name="textBox4" VerticalAlignment="Bottom" Width="29" KeyDown="textBox4_KeyDown" Text="1" TextAlignment="Right" />
+        <Label Content="Copied
+               " Height="28" HorizontalAlignment="Left" Margin="504,217,0,0" Name="label4" VerticalAlignment="Top" />
+        <Button Content="Repack" HorizontalAlignment="Left" Height="29" Margin="35,249,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click"/>
+        <Button Content="POProcessing" HorizontalAlignment="Left" Height="29" Margin="202,249,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click_1"/>
+    </Grid>
+</Window>

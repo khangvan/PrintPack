@@ -1,0 +1,40 @@
+﻿Ghi chu
+
+099		doc mode PO, WH
+100		khoi tao, 
+101		bt label
+200		amcheckbox_lam gi_<1000 thung
+		nhap PO vao
+300		runman() check tum lum
+301		doc thong tin tren tinformation
+		OK-303
+		FAIL- 302
+302		Get profuctmap
+303		Gan bt duong dan va load SN
+		*new change_baseffcdlm _dung 1 nhan (25 July)
+303		check SN PO va pull
+
+
+
+		
+
+cau hoi
+- ame_chekboxnumber lam gi 
+- t_infomation lay prodcutmap chi
+
+
+cai thien
+
+tang toc khoi dong chuong trinh
+pull offline multi prodoer SN list
+khai bao option
+add list local truoc khi upload data
+cap box number sau cung
+input way tuy chon
+	- 
+
+phan loai setup
+
+DLM/FFC		SAPcreate	notest		isPO
+BASEACS		ACS create	istest	-
+BASESAP		SAPcreate	istest

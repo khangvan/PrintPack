@@ -1,0 +1,57 @@
+﻿1-adodb net GAC 7.00 not load
+add adodb.dll vao com project, set property to local
+release- done
+
+2- nhan dang print overpack, overpack content cho lead
+nhạn dang model input Done
+
+3- load 2D SN
+
+Up qua printpack
+
+4- lock
+lock local (add SN vao lock SN)- then up (update partrun)
+lock temp (add SN vao lock SN- then up (update partrun)
+lock direct/up
+
+check SN packed input
+updatethong tin don hang cho operater
+screen1-
+add list
+complete->update tmp
+update ->pack
+ ? check trong trường hợp nào ko check số SN
+ Solution: 
+ - check BASE setuo scanner -> ko  check thuojc PO
+ - nếu BASE mà ko có Data trên tffc_ => ko check luôn
+
+
+problem_12 oct _ame getpartrun bi time out
+
+Done - hoi Gau tai sao getbox number thuong ko doi?get->ghiprocess->finish clear
+- Lam sao catch PO đã complete/ECO
+
+check sn cho base scanner->skip
+
+Reprint show- > done
+xoa box
+box print
+
+task 13 Oct
+-	Fix lỗi thường disconnect do số truy vấn quá lớn
+-	Fix lỗi Engine packing chỉ dóng được 66pcs thay vì 364pcs
+-	Fix lỗi Unique do dung dữ liệu tạm local
+
+- Fix lỗi Base HH không check cho DL00 ->done -> release P-Test Cradle/HH02- follow 3 Nov
+- Build repack cho WH
+(
+Detail Process
+- Load 2 BOX- load all sn
+- Get new box
+- remove => treo lửng
+- add => add templist
+)
+- Tìm box theo số SN
+
+
+
